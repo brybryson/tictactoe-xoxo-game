@@ -1,0 +1,56 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http_equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>Dashboard</title> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="landing-2.css">
+    <link rel="icon" href="new-logo-icon.PNG">
+    <title>Tic-Tac-Toe Game</title>
+</head>
+<body>
+    <div class="main-container">
+        <!-- LOGO -->
+        <div class="logo-container">
+            <div class="header">
+                <div class="button">
+                    <div class="button-container">
+                        <!-- <a href="login.php"><button id="login">LOGIN</button></a> -->
+                        <a href="logout.php"><button id="login">LOGOUT</button></a>
+                    </div>
+                </div>
+            </div>
+            
+            <img class="logo" src="lastest-logo.svg">
+            <div class="button">
+                <a href="FINAL-MECHANICS.html"><button id="play" onclick="playButtonClickAndSound()">PLAY</button></a>
+                <a href="Leaderboard-2.html"><button id="leaderboards" onclick="playButtonClickAndSound()">Leaderboards</button></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- AUDIO - BUTTON CLICKING SOUNDS -->
+    <audio id="clickSound">
+        <source src="alert-sound.mp3" type="audio/mpeg">
+    </audio>
+
+
+    <div class="footer">
+        <p>© Copyright 2024 | All rights reserved.<br>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Created by <span>Angcot · Fesariton · Melliza · Quintos · Sosas</span>
+        </p>
+        <div class="right-side-footer">
+            <p class="hi">Connect with us  &nbsp;  </p>
+            <a href="https://www.facebook.com/inytwjo"><img class="icon" src="envelope.svg" alt="Envelope"></a>
+            <a href="https://www.facebook.com/inytwjo"><img class="icon" src="facebook.svg" alt="Facebook"></a>
+        </div>
+    </div>
+
+</body>
+</html>

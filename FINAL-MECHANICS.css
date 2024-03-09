@@ -1,0 +1,380 @@
+@font-face {
+    font-family: 'NerkoOne-Regular';
+    src: url('./NerkoOne-Regular.ttf') format('truetype'); 
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'LuckiestGuy-Regular';
+    src: url('./LuckiestGuy-Regular.ttf') format('truetype');
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'Helvetica-Light-Regular';
+    src: url('./Helvetica Light Regular.ttf') format('truetype');
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'Inter-Variable-Font';
+    src: url('./Inter-Variable-Font.ttf') format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Slackey-Regular';
+    src: url('./Slackey-Regular.ttf') format('truetype');
+}
+
+html {
+    height: 100%;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+
+
+
+.okay-button  {
+    /* margin-top: -50px; */
+    outline: 8px solid #ffffff;
+    border: none;
+    border-radius: 100px;
+    background: #FFC121;
+    box-shadow: 0px 15px 0px 0px rgba(74, 136, 255, 1); /* Shadow color: #4A88FF */
+    position: relative; /* Ensure the button is positioned relative */
+    margin-top: 0px;
+}
+
+body {
+    background-image: url('new-background-text.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header #login {
+    font-family: 'Slackey-Regular', Helvetica, sans-serif;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+    width: 120px;
+    height: 40px;
+    outline: 8px solid #ffffff;
+    border: none;
+    border-radius: 100px;
+    background: #FFC121;
+    box-shadow: 0px 15px 0px 0px rgba(74, 136, 255, 1);
+    top: 350px;
+    right: 300px;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      
+        font-size: 16px; /* Adjust font size for smaller screens */
+        width: 100px; /* Adjust width for smaller screens */
+        height: 30px; /* Adjust height for smaller screens */
+        outline-width: 6px; /* Adjust outline width for smaller screens */
+        top: 330px; /* Adjust top position for smaller screens */
+        left: 50px; /* Adjust right position for smaller screens */
+    }
+
+}
+
+
+.header #okay {
+    font-family: 'Slackey-Regular', Helvetica, sans-serif;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+    width: 130px;
+    height: 40px;
+    outline: 8px solid #ffffff;
+    border: none;
+    border-radius: 100px;
+    background: #FFC121;
+    box-shadow: 0px 15px 0px 0px rgba(74, 136, 255, 1);
+    /* Keep position: relative; if needed */
+}
+
+
+
+
+
+.button #login:hover, .button #okay:hover {
+    border-color:  #4A88FF;
+    background-color:  #4A88FF;
+}
+
+.button #login {
+    /* margin-top: -50px; */
+    gap: 20px;
+    outline: 8px solid #ffffff;
+    border: none;
+    border-radius: 100px;
+    background: #FFC121;
+    box-shadow: 0px 15px 0px 0px rgba(74, 136, 255, 1); /* Shadow color: #4A88FF */
+    position: relative; /* Ensure the button is positioned relative */
+    margin-top: 120px;
+}
+
+.button #okay {
+    /* margin-top: -50px; */
+
+    outline: 8px solid #ffffff;
+    border: none;
+    border-radius: 100px;
+    background: #FFC121;
+    box-shadow: 0px 15px 0px 0px rgba(74, 136, 255, 1); /* Shadow color: #4A88FF */
+    position: relative; /* Ensure the button is positioned relative */
+    margin-top: 0px;
+}
+
+.button #okay::before {
+    content: '';
+    display: flex;
+    position: absolute;
+    top: 5px;
+    left: 75px; 
+    width: 40px; 
+    height: 40px; 
+    background-image: url('shine-button.svg'); 
+    background-size: contain; 
+    background-repeat: no-repeat; 
+}
+
+.button #login::before {
+    content: '';
+    display: flex;
+    position: absolute;
+    top: 5px;
+    left: 75px; 
+    width: 40px; 
+    height: 40px; 
+    background-image: url('shine-button.svg'); 
+    background-size: contain; 
+    background-repeat: no-repeat; 
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        top: 3px; /* Adjust top position for smaller screens */
+        left: 25px; /* Adjust left position for smaller screens */
+        width: 30px; /* Adjust width for smaller screens */
+        height: 30px; /* Adjust height for smaller screens */
+    }
+
+   
+}
+
+button #okey{
+    gap: 20px;
+    outline: 8px solid #ffffff;
+    border: none;
+    border-radius: 100px;
+    background: #FFC121;
+    box-shadow: 0px 15px 0px 0px rgba(74, 136, 255, 1); /* Shadow color: #4A88FF */
+    position: relative; /* Ensure the button is positioned relative */
+    margin-top: 120px;
+}
+
+.button-natin {
+    position: relative; /* Adding position for better control */
+    margin-right: -140px;
+}
+
+#okey {
+    font-family: 'Slackey-Regular', Helvetica, sans-serif;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+    width: 120px;
+    height: 40px;
+    outline: 8px solid #ffffff;
+    border: none;
+    border-radius: 100px;
+    background: #FFC121;
+    box-shadow: 0px 15px 0px 0px rgba(74, 136, 255, 1);
+    top: 350px;
+    right: 300px;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+#okey:hover {
+    background-color: #e64a2e; /* Change background color on hover */
+}
+
+#okey:hover {
+    border-color:  #4A88FF;
+    background-color:  #4A88FF;
+}
+
+@media (max-width: 768px) {
+    .button-natin {
+        position: relative;
+
+        width:20%; 
+        /* min-width: 90%; */
+        height:auto; 
+        margin-bottom: 80px;
+        margin-left: -20px;
+    }
+    #okey {
+        font-family: 'Slackey-Regular', Helvetica, sans-serif;
+        cursor: pointer;
+        font-size: 18px;
+        color: white;
+        width: 110px;
+        height: 34px;
+        outline: 8px solid #ffffff;
+        border: none;
+        border-radius: 100px;
+        background: #FFC121;
+        box-shadow: 0px 15px 0px 0px rgba(74, 136, 255, 1);
+        top: 350px;
+        right: 300px;
+        transform: translate(-50%, -50%);
+        z-index: 10;
+    }
+}
+
+
+
+
+
+
+
+.button-container {
+    margin-top: 5px;
+}
+
+.mech {
+    position: relative;
+
+    width:65%; 
+
+    height:auto; 
+    margin-bottom: 80px;
+}
+
+@media (max-width: 768px) {
+    .mech {
+        position: relative;
+
+        width:90%; 
+        /* min-width: 90%; */
+        height:auto; 
+        margin-bottom: 80px;
+    }
+}
+
+
+/* FOOTERRRRR */
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 50px; /* Increase the height to accommodate content better */
+    width: 100%;
+    padding: 10px;
+    background-color: #4A88FF;
+    font-family: 'Inter-Variable-Font';
+    text-align: center;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+    flex-wrap: wrap; /* Allow items to wrap to a new line if necessary */
+}
+
+.footer p {
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center; /* Center the text */
+    color: #ffffff;
+    margin-left: 30px;
+    margin-top: 5px; /* Add some space between the paragraphs */
+}
+
+.right-side-footer {
+    display: flex;
+    justify-content: center; /* Center the items horizontally */
+    align-items: center;
+    margin-right: 50px;
+    flex-wrap: wrap; /* Allow items to wrap to a new line if necessary */
+    margin-top: 10px; /* Add some space between the top of the footer and the content */
+}
+
+.right-side-footer .hi {
+    font-size: 13px;
+    text-align: center; /* Center the text */
+    color: #ffffff;
+    margin: 0 10px; /* Add some space around the text */
+    margin-bottom: 15px;
+}
+
+.right-side-footer .icon {
+    width: 18px;
+    height: 18px;
+
+    margin: 0px 5px 10px; /* Add some space around the icons */
+}
+@media (max-width: 768px) {
+    .footer {
+        height: auto; /* Allow the height to adjust based on content */
+        margin-top: 0px;
+        padding: 10px  0px 0px; /* Adjust the padding */
+        display: flex;
+        justify-content: center; /* Center the items horizontally */
+        align-items: center;
+    }
+
+    .right-side-footer {
+        margin-bottom: 10px; /* Increase the margin */
+        display: flex;
+      
+        align-items: center;
+    }
+
+    .footer p {
+
+       
+
+        margin: 5px 5px 0px; /* Adjust the margins for better spacing */
+       
+    }
+}
+
